@@ -1,16 +1,31 @@
-function getAuthors() {
-  const quote1 = `\"A goal is just a dream with a deadline.\"-Drake`,
-    quote2 = `\"The unexamined life is not worth living.\"-Socrates`;
+// Name of author
+const quote1 = "A goal is just a dream with a deadline. - Drake";
 
-  let author1 = "Drake",
-    author2 = "Socrates";
-
-  (quote1 = author1), (quote2 = author2);
-
-  return [author1, author2];
+function author1(quote1) {
+  let author = quote1.split(" ");
+  return author[author.length - 1];
 }
+console.log(author1(quote1));
 
-getAuthors();
+const quote2 = "The unexamined life is not worth living. - Socrates";
+
+function author2(quote2) {
+  let author = quote2.split(" ");
+  return author[author.length - 1];
+}
+console.log(author2(quote2));
+
+// function getAuthors(author1, author2) {
+//   const quote1 = `\"A goal is just a dream with a deadline.\"-Drake`,
+//     quote2 = `\"The unexamined life is not worth living.\"-Socrates`;
+
+//   let author1 = "Drake",
+//     author2 = "Socrates";
+
+//   // (quote1 = author1), (quote2 = author2);
+
+//   return [author1, author2];
+// }
 
 // const quote1 = `\"A goal is just a dream with a deadline.\"-Drake`;
 
